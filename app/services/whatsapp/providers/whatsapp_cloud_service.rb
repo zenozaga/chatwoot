@@ -77,7 +77,7 @@ class Whatsapp::Providers::WhatsappCloudService < Whatsapp::Providers::BaseServi
 
   def media_url(media_id, phone_number_id = nil)
     url = "#{api_base_path}/v13.0/#{media_id}"
-    url += "?phone_number_id=#{phone_number_id}" if phone_number_id
+    # url += "?phone_number_id=#{phone_number_id}" if phone_number_id
     url
   end
 
